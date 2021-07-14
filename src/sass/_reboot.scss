@@ -1,0 +1,49 @@
+// Font Awesome
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts" !default;
+@import '~@fortawesome/fontawesome-free/scss/variables';
+@import '~@fortawesome/fontawesome-free/scss/mixins';
+@import '~@fortawesome/fontawesome-free/scss/core';
+.#{$fa-css-prefix}-plus:before { content: fa-content($fa-var-plus); }
+.#{$fa-css-prefix}-pencil-alt:before { content: fa-content($fa-var-pencil-alt); }
+@import '~@fortawesome/fontawesome-free/scss/solid';
+
+html {
+    width: 100%;
+    height: 100%;
+    display: table;
+    background-color: #0079bf;
+}
+
+body {
+    width: 100%;
+    display: table-cell;
+    position: relative;
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body,
+button,
+html,
+input,
+select,
+textarea {
+    color: #172b4d;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans,
+        Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+button,
+textarea {
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}

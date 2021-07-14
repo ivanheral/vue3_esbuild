@@ -1,0 +1,57 @@
+{
+  "name": "vue3_webpack",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "webpack serve --env=dev",
+    "start:dev": "webpack serve  --env=dev",
+    "start:prod": "webpack serve --env=prod",
+    "build:dev": "webpack --env=dev",
+    "build:prod": "webpack --env=prod",
+    "check-types": "tsc",
+    "eslint": "eslint --fix --ext .vue,.ts src",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "vue3",
+    "webpack",
+    "esbuild"
+  ],
+  "author": "Iván Hernández Alvarez <ivanhernandezal@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^26.0.19",
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/parser": "^4.11.0",
+    "@vue/compiler-sfc": "^3.0.4",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "@vue/test-utils": "^2.0.0-beta.13",
+    "css-loader": "^5.0.1",
+    "esbuild-loader": "^2.7.0",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-vue": "^7.3.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.0.0-beta.1",
+    "jest": "^26.6.3",
+    "node-sass": "^5.0.0",
+    "prettier": "^2.2.1",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.3",
+    "vue-jest": "^5.0.0-alpha.7",
+    "vue-loader": "^16.1.2",
+    "webpack": "^5.11.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "vue": "^3.0.4",
+    "vuex": "^4.0.0-rc.2"
+  }
+}
